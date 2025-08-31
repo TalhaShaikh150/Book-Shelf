@@ -1,14 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book Shelf</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <script src="scripts/script.js">
-   
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxury Bookshelf | Modern Design</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <div class="header-content">
+          <div class="logo">
+            <div class="logo-icon">
+              <i class="fas fa-book-open"></i>
+            </div>
+            <div class="logo-text">BookShelf</div>
+          </div>
+
+          <div class="nav-links">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Library</a>
+            <a href="#" class="nav-link">Collections</a>
+            <a href="#" class="nav-link">Discover</a>
+          </div>
+
+          <div class="user-actions">
+            <button class="user-btn"><i class="fas fa-bell"></i></button>
+            <button class="user-btn"><i class="fas fa-user"></i></button>
+            <button class="user-btn"><i class="fas fa-cog"></i></button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Discover Your Next
+            <span style="color: var(--accent)">Favorite Book</span>
+          </h1>
+          <p class="hero-subtitle">
+            Explore our curated collection of literary masterpieces from around
+            the world. Find your next adventure between the pages.
+          </p>
+          <div class="hero-cta">
+            <button class="btn btn-primary">
+              <i class="fas fa-book-open"></i> Start Reading
+            </button>
+            <button class="btn btn-secondary">
+              <i class="fas fa-compass"></i> Explore Library
+            </button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1497636577773-f1231844b336?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80"
+            alt="Luxury Library"
+          />
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <div class="stats-container">
+        <div class="stat-card">
+          <div class="stat-value">4,827</div>
+          <div class="stat-label">Books Available</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">1,243</div>
+          <div class="stat-label">Books Read</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">392</div>
+          <div class="stat-label">Currently Reading</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">3,192</div>
+          <div class="stat-label">To Read</div>
+        </div>
+      </div>
+
+      <!-- Featured Books Slider -->
+      <!-- <h2 class="section-title">Featured Collection</h2>
+        <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="book-card">
+                        <div class="book-badge">Bestseller</div>
+                        <div class="book-cover">
+                            <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Book Cover">
+                        </div>
+                        <div class="book-details">
+                            <h3 class="book-title">The Great Gatsby</h3>
+                            <p class="book-author">F. Scott Fitzgerald</p>
+                            <p class="book-description">A classic novel of the Jazz Age, exploring themes of idealism, resistance to change, and excess.</p>
+                            <div class="book-meta">
+                                <div>
+                                    <div class="book-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <div class="book-pages">
+                                        <i class="fas fa-file"></i> 180 pages
+                                    </div>
+                                </div>
+                                <span class="book-status status-read">Read</span>
+                            </div>
+                        </div>
+                        <div class="book-actions">
+                            <button class="action-btn btn-read"><i class="fas fa-eye"></i> Read</button>
+                            <button class="action-btn btn-favorite"><i class="far fa-bookmark"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="book-card">
+                        <div class="book-badge">Classic</div>
+                        <div class="book-cover">
+                            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Book Cover">
+                        </div>
+                        <div class="book-details">
+                            <h3 class="book-title">To Kill a Mockingbird</h3>
+                            <p class="book-author">Harper Lee</p>
+                            <p class="book-description">A gripping tale of racial injustice and childhood innocence in the American South.</p>
+                            <div class="book-meta">
+                                <div>
+                                    <div class="book-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="book-pages">
+                                        <i class="fas fa-file"></i> 281 pages
+                                    </div>
+                                </div>
+                                <span class="book-status status-reading">Reading</span>
+                            </div>
+                        </div>
+                        <div class="book-actions">
+                            <button class="action-btn btn-read"><i class="fas fa-eye"></i> Read</button>
+                            <button class="action-btn btn-favorite"><i class="far fa-bookmark"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="book-card">
+                        <div class="book-badge">Dystopian</div>
+                        <div class="book-cover">
+                            <img src="https://images.unsplash.com/photo-1629992101753-56d196c8aabb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Book Cover">
+                        </div>
+                        <div class="book-details">
+                            <h3 class="book-title">1984</h3>
+                            <p class="book-author">George Orwell</p>
+                            <p class="book-description">A dystopian social science fiction novel that examines the consequences of totalitarianism.</p>
+                            <div class="book-meta">
+                                <div>
+                                    <div class="book-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="book-pages">
+                                        <i class="fas fa-file"></i> 328 pages
+                                    </div>
+                                </div>
+                                <span class="book-status status-unread">Unread</span>
+                            </div>
+                        </div>
+                        <div class="book-actions">
+                            <button class="action-btn btn-read"><i class="fas fa-eye"></i> Read</button>
+                            <button class="action-btn btn-favorite"><i class="far fa-bookmark"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div> -->
+
+      <!-- Filter Section -->
+      <div class="filter-section">
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="Search by title, author, or genre..."
+            class="search-input"
+          />
+          <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="filter-group">
+          <button class="filter-btn active">
+            <i class="fas fa-book"></i> All
+          </button>
+          <button class="filter-btn">
+            <i class="fas fa-feather"></i> Fiction
+          </button>
+          <button class="filter-btn">
+            <i class="fas fa-glasses"></i> Non-Fiction
+          </button>
+          <button class="filter-btn">
+            <i class="fas fa-crown"></i> Fantasy
+          </button>
+          <button class="filter-btn">
+            <i class="fas fa-question-circle"></i> Mystery
+          </button>
+        </div>
+      </div>
+
+      <!-- Bookshelf -->
+      <div class="bookshelf">
+        <div class="shelf-header">
+          <h2 class="shelf-title">Featured Collection</h2>
+          <div class="view-options">
+            <button class="view-btn active"><i class="fas fa-th"></i></button>
+            <button class="view-btn"><i class="fas fa-list"></i></button>
+            <button class="view-btn"><i class="fas fa-grip-lines"></i></button>
+          </div>
+        </div>
+        <div class="not-found none">
+          <span> Search Results Not Found </span>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <!-- Books Grid -->
+        <div class="books-grid">
+          <!-- Book 1 -->
+          <div class="book-card">
+                    <div class="book-badge">Bestseller</div>
+                    <div class="book-cover">
+                        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Book Cover">
+                    </div>
+                    <div class="book-details">
+                        <h3 class="book-title">The Great Gatsby</h3>
+                        <p class="book-author">F. Scott Fitzgerald</p>
+                        <p class="book-description">A classic novel of the Jazz Age, exploring themes of idealism, resistance to change, and excess.</p>
+                        <div class="book-meta">
+                            <div>
+                                <div class="book-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <div class="book-pages">
+                                    <i class="fas fa-file"></i> 180 pages
+                                </div>
+                            </div>
+                            <span class="book-status status-read">Read</span>
+                        </div>
+                    </div>
+                    <div class="book-actions">
+                        <button class="action-btn btn-read"><i class="fas fa-eye"></i> Read</button>
+                        <button class="action-btn btn-favorite"><i class="far fa-bookmark"></i></button>
+                    </div>
+                </div>
+
+          <!-- Book 2 -->
+          <div class="book-card">
+                    <div class="book-badge">Classic</div>
+                    <div class="book-cover">
+                        <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Book Cover">
+                    </div>
+                    <div class="book-details">
+                        <h3 class="book-title">To Kill a Mockingbird</h3>
+                        <p class="book-author">Harper Lee</p>
+                        <p class="book-description">A gripping tale of racial injustice and childhood innocence in the American South.</p>
+                        <div class="book-meta">
+                            <div>
+                                <div class="book-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="book-pages">
+                                    <i class="fas fa-file"></i> 281 pages
+                                </div>
+                            </div>
+                            <span class="book-status status-reading">Reading</span>
+                        </div>
+                    </div>
+                    <div class="book-actions">
+                        <button class="action-btn btn-read"><i class="fas fa-eye"></i> Read</button>
+                        <button class="action-btn btn-favorite"><i class="far fa-bookmark"></i></button>
+                    </div>
+                </div>
+
+          <!-- Book 3 -->
+          <div class="book-card">
+                    <div class="book-badge">Dystopian</div>
+                    <div class="book-cover">
+                        <img src="https://images.unsplash.com/photo-1629992101753-56d196c8aabb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Book Cover">
+                    </div>
+                    <div class="book-details">
+                        <h3 class="book-title">1984</h3>
+                        <p class="book-author">George Orwell</p>
+                        <p class="book-description">A dystopian social science fiction novel that examines the consequences of totalitarianism.</p>
+                        <div class="book-meta">
+                            <div>
+                                <div class="book-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="book-pages">
+                                    <i class="fas fa-file"></i> 328 pages
+                                </div>
+                            </div>
+                            <span class="book-status status-unread">Unread</span>
+                        </div>
+                    </div>
+                    <div class="book-actions">
+                        <button class="action-btn btn-read"><i class="fas fa-eye"></i> Read</button>
+                        <button class="action-btn btn-favorite"><i class="far fa-bookmark"></i></button>
+                    </div>
+                </div>
+
+          <!-- Book 4 -->
+          <div class="book-card">
+                    <div class="book-badge">Romance</div>
+                    <div class="book-cover">
+                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Book Cover">
+                    </div>
+                    <div class="book-details">
+                        <h3 class="book-title">Pride and Prejudice</h3>
+                        <p class="book-author">Jane Austen</p>
+                        <p class="book-description">A romantic novel of manners that depicts the emotional development of protagonist Elizabeth Bennet.</p>
+                        <div class="book-meta">
+                            <div>
+                                <div class="book-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="book-pages">
+                                    <i class="fas fa-file"></i> 432 pages
+                                </div>
+                            </div>
+                            <span class="book-status status-read">Read</span>
+                        </div>
+                    </div>
+                    <div class="book-actions">
+                        <button class="action-btn btn-read"><i class="fas fa-eye"></i> Read</button>
+                        <button class="action-btn btn-favorite"><i class="far fa-bookmark"></i></button>
+                    </div>
+                </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>© 2023 Novelle • Curated Digital Library</p>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="scripts/config.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
