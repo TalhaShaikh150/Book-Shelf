@@ -1,4 +1,4 @@
-const API_KEY = CONFIG.API_KEY;
+const API_KEY = "AIzaSyDBo2MEzRVeq_DvAU7uv0FTGvZ0qgRK-t8";
 
 async function getRes() {
   const res = await fetch(
@@ -68,8 +68,7 @@ async function searchBook(books) {
         booksContainer.innerHTML = "";
         books.forEach((singleBook) => {
           let bookTitle = singleBook.volumeInfo.title;
-          let bookCover =
-            singleBook.volumeInfo.imageLinks?.thumbnail ;
+          let bookCover = singleBook.volumeInfo.imageLinks?.thumbnail;
           let bookPageCount = singleBook.volumeInfo.pageCount;
 
           renderBook(bookTitle, bookCover, bookPageCount);
